@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte y Reparaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">Tienda y Reparaciones</div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="pasarela.html">Pasarela</a>
+        <a href="soporte.html">Soporte</a>
+        
+    </nav>
+</header>
+<main class="soporte">
+    <h1>Reservar Cita</h1>
+    
+    <section>
+        <form>
+            <h2>Seleccione Servicio</h2>
+            <label><input type="checkbox"> Reparación de Display</label><br>
+            <label><input type="checkbox"> Cambio de Batería</label><br>
+            <label><input type="checkbox"> Limpieza General</label>
+            
+            <h2>Datos del Cliente</h2>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required>
+            
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" required>
+            
+            <h2>Fecha y Hora de la Cita</h2>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" required>
+            
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" required>
+            
+            <button type="submit" class="btn-cita">Confirmar Cita</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>

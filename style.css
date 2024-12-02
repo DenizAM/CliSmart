@@ -1,0 +1,214 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Categorías */
+.categorias {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categorias h2 {
+    margin-top: 0;
+}
+
+.categorias ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categorias ul li {
+    margin-bottom: 10px;
+}
+
+.categorias ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.categorias ul li a:hover {
+    color: #007BFF;
+}
+
+/* Productos */
+.productos {
+    width: 75%;
+    padding: 20px;
+}
+
+.productos h2 {
+    margin-top: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto; /* Ajusta altura proporcional */
+    max-width: 150px; /* Tamaño máximo uniforme */
+    max-height: 150px; /* Evita imágenes desproporcionadas */
+    margin: auto;
+    object-fit: contain; /* Ajusta imágenes dentro de contenedores */
+}
+
+.producto p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulario General */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Pasarela de Pago */
+.pago .paso {
+    margin-bottom: 2rem;
+}
+
+.detalle-pedido p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Soporte y Reparaciones */
+.soporte form h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* General del main */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+/* Estilo para imágenes del carrito */
+.item-carrito img {
+    width: 100px; /* Ancho máximo */
+    height: 100px; /* Alto máximo */
+    object-fit: contain; /* Ajusta las imágenes proporcionalmente */
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+    border: 1px solid #ccc; /* Añade un borde opcional para estilo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+.item-carrito {
+    display: flex; /* Alinea el contenido horizontalmente */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
+    margin-bottom: 15px; /* Espaciado entre los elementos del carrito */
+    border: 1px solid #ddd; /* Añade un borde opcional */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro para destacar */
+}
+
+.buscador {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.buscador input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
